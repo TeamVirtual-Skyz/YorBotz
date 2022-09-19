@@ -1,23 +1,23 @@
 let fetch = require('node-fetch')
 
 let handler = async (m, { conn }) => {
-    pepe = 'https://telegra.ph/file/b31b5f0109ff5bd098704.jpg'
+    pepe = 'https://telegra.ph/file/8077b1f0806b68541a514.jpg'
     baper = await fetch(pepe).then(a => a.buffer())
     let listMessage = {
-        "title": "◈ Made by Zens",
+        "title": "◈ Created by putra",
         "description": `
 ┌「 *Sewa bot* 」
 │     
 ├ 1 Grup / 30 Hari
-├ Rp. 10,000 Gopay
-├ Rp. 15,000 Pulsa Three
+├ Rp. 10,000 Dana
+├ Rp. 15,000 Pulsa indosat
 │
 ├ 1 Premium / 30 Hari
-├ Rp. 5,000 Gopay
-├ Rp. 10,000 Pulsa Three
+├ Rp. 5,000 Dana
+├ Rp. 10,000 Pulsa indosat
 │
 ├ tertarik? hubungi: 
-├ @62895604670507   (Zenss)
+├ @17722223969   (putra-skyz)
 └────
 `.trim(),
         "listType": "PRODUCT_LIST",
@@ -36,9 +36,9 @@ let handler = async (m, { conn }) => {
                 "productId": "4730029423700586",
                 "jpegThumbnail": baper
             },
-            "businessOwnerJid": "62895604670507@s.whatsapp.net"
+            "businessOwnerJid": "17722223969@s.whatsapp.net"
         },
-        "footerText": "https://wa.me/c/62895604670507\n\nowner number : wa.me/62895604670507"
+        "footerText": "https://wa.me/c/17722223969\n\nowner number : wa.me/17722223969"
     }
     conn.sendMessage(m.chat, listMessage, 'listMessage', { quoted: m, contextInfo: { mentionedJid: conn.parseMention(listMessage.description) } })
 }
