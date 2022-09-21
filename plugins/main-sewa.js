@@ -36,9 +36,9 @@ let handler = async (m, { conn }) => {
                 "productId": "4730029423700586",
                 "jpegThumbnail": baper
             },
-            "businessOwnerJid": "17722223969@s.whatsapp.net"
+            "businessOwnerJid": "6285882802642"
         },
-        "footerText": "https://wa.me/c/17722223969\n\nowner number : wa.me/17722223969"
+        "footerText": "https://wa.me/c/6285882802642\n\nowner number : wa.me/6285882802642"
     }
     conn.sendMessage(m.chat, listMessage, 'listMessage', { quoted: m, contextInfo: { mentionedJid: conn.parseMention(listMessage.description) } })
 }
